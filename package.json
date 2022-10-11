@@ -10,7 +10,7 @@
   "scripts": {
     "_comment_ubuntu": "clean: del ./build/*",
     "_comment_win": "clean: del-cli ./build/*",
-    "clean": "del ./build/*", 
+    "clean": "del-cli ./build/*", 
     "build": "npm run clean && tsc",
     "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish"
   },
